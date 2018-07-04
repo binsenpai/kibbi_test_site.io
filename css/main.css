@@ -62,8 +62,11 @@ body {
 }
 
 .leftsb {
+    text-align: left;
+    font-family: 'Segoe UI Light', sans-serif;
+    font-size: 16px;
     grid-column: 1 / span 1;
-    grid-row: 2 / span 2;
+    grid-row: 2 / span auto;
 }
 
 .rightsb {
@@ -74,6 +77,9 @@ body {
 .footer {
     grid-column: 3 / span 0;
     grid-row: 3 / span 0;
+    font-family: 'Segoe UI Light', sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
 
 #hr1 {
@@ -96,12 +102,12 @@ body {
 }
 
 i {
-    padding: 5px;
+    padding: 10px;
     color: white;
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+    -webkit-transition: color .5s ease-out;
+    -moz-transition: color .5s ease-out;
+    -o-transition: color .5s ease-out;
+    transition: color .5s ease-out;
 
 }
 
@@ -110,7 +116,7 @@ i {
 }
 
 .fa-github:hover {
-    color: gray;
+    color: dimgray;
 }
 
 .fa-envelope:hover {
