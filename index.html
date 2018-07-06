@@ -2,85 +2,112 @@
 <html>
 
 <head>
-
+    <title onload="Scroll">Kibii - Anime Awareness Project</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title onload="Scroll">Kibii - Anime Awareness Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- BS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awe-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Eater|Exo+2|Galada|Indie+Flower|Kaushan+Script|Pacifico|Roboto|Roboto+Condensed|Satisfy|Yellowtail" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eagle+Lake|Eater|Exo+2|Galada|Indie+Flower|Kaushan+Script|Pacifico|Roboto|Roboto+Condensed|Satisfy|Yellowtail">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" id="theme-stylesheet">
     <!-- favicocococn-->
     <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- Cloudflare -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script>
+    <!-- Google Api -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- BS js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- JQ -->
+    <script src="js/jquery.cookie.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="header">
-            <h1 id="title">Kibii - Anime Awareness Project</h1>
-            <p id="lead">Big things are coming~</p>
-        </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="navbtn">
+        <div class="grid-container">
+            <div class="header">
+                <span id="spanbtn" onclick="openNav()">&#9776;</span>
+                <h1 id="title">Kibii - Anime Awareness Project</h1>
+            </div>
 
-        <div class="main">
-            <br>
-            <br>
-            <p>Check out
-                <a href="https://beta.kibii.tv">
-                    <font color="darkorange">Kibii TV!</font>
-                </a> It's an amazing new application that's sure to tickle your fancy.
-            </p>
+            <div class="main">
+                <p>Check out
+                    <a href="https://beta.kibii.tv">
+                        <font color="darkorange">Kibii TV!</font>
+                    </a> It's an amazing new application that's sure to tickle your fancy.
+                </p>
 
-            <p>
-                Kibii is an anime awareness orginization building the foundation for anime, otaku, and weeaboo products to promote East Asian media and other Japanese content.
-            </p>
-        </div>
+                <p>
+                    Kibii is an anime awareness orginization building the foundation for anime, otaku, and weeaboo products to promote East Asian media and other Japanese content.
+                </p>
+            </div>
 
-        <div class="leftsb">
-            <h4>Links to our social</h4>
-            <a class="twitter" href="https://twitter.com/kibiitv">
+            <!--
+            <div class="leftsb">
+                <p>test</p>
+            </div>
+            -->
+
+            <div class="rightsb">
+                <p>Latest News</p>
+                <ul>
+                    <li>
+                        news
+                    </li>
+                    <li>
+                        news
+                    </li>
+                    <li>
+                        news
+                    </li>
+                    <li>
+                        news
+                    </li>
+                    <li>
+                        news
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <p class="credit">&copy; 2018 Kibii Inc.</p>
+                <a class="twitter" href="https://twitter.com/kibiitv">
                     <i class="fab fa-twitter fa-2x"></i>
-                </a><br><br>
+                </a>
 
-            <a class="github" href="https://github.com/KibiiTV">
-                    <i class="fab fa-github fa-2x"></i>
-                </a><br><br>
+                <a class="github" href="https://github.com/KibiiTV">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
 
-            <a class="email" href="#">
+                <a class="email" href="#">
                     <i class="fas fa-envelope fa-2x"></i>
-                </a><br><br>
+                </a>
 
-            <a class="discord" href="https://discord.gg/2keWYZs">
+                <a class="discord" href="https://discord.gg/2keWYZs">
                     <i class="fab fa-discord fa-2x"></i>
-                </a><br><br>
+                </a>
 
-            <a class="twitch" href="https://twitch.tv/kibiitv">
+                <a class="twitch" href="https://twitch.tv/kibiitv">
                     <i class="fab fa-twitch fa-2x"></i>
-                </a><br><br>
-        </div>
-
-        <div class="rightsb">
-            <p>test</p>
-        </div>
-
-        <div class="footer">
-            <p class="credit">&copy; 2018 Kibii LLC</p>
+                </a>
+            </div>
         </div>
     </div>
-    <!-- js-->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.cookie.js">
-    </script>
-    <script src="js/front.js">
-    </script>
 </body>
 
 </html>
