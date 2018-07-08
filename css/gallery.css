@@ -90,10 +90,6 @@
 
     /*Navbar*/
 
-    * {
-        box-sizing: border-box;
-    }
-
     .nav {
         height: auto;
         width: 100%;
@@ -181,8 +177,14 @@
             height: calc(100vh - 50px);
             overflow-y: auto;
         }
+}
+    #user {
+        float: right;
+        border-left: solid 3px #404040;
     }
+
     /* Modal (background) */
+
     .modal {
         display: none;
         /* Hidden by default */
