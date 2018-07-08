@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title onload="Scroll">floatr image viewer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="twitter:title" content="European Travel Destinations ">
+    <meta name="twitter:description" content=" Offering tour packages for individuals or groups.">
+    <meta name="twitter:image" content=" http://euro-travel-example.com/thumbnail.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/gallery.css">
+    <!-- Font Awe -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <!-- favicocococn-->
+    <link rel="shortcut icon" href="../images/floatr.png">
+
+    <!-- Cloudflare -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script>
+    <!-- Google Api -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- BS js-->
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<style>
+</style>
+
+<body>
+
+    <div class="topnav">
+        <a id="webpage"><span>float<font color="lawngreen">r</font></span></a>
+        <a href="https://floatr.co/" target="_blank">Home</a>
+        <a href="#" id="myBtn">About</a>
+        <a href="https://floatr.co/app/" target="_blank">Apps</a>
+        <a href="https://floatr.co/ui/" style="float:right" target="_blank"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="https://discordapp.com/invite/2keWYZs" style="float:right; border-left: solid 3px #404040;" target="_blank"><i class="fas fa-user" target="_blank"></i> Sign Up</a>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="text-align: center">About <span>float<font color="lawngreen">r</font></span></h2>
+            </div>
+            <div class="modal-body">
+                <h3 style="color: whitesmoke"><span>float<font color="lawngreen">r</font></span> is a unique type of file hosting and URL shortening service, allowing you to pick from over 140+ domains and many are added frequently!</h3>
+
+                <h3 style="color: whitesmoke">This way, you can upload your files and get a customizable domain, this allows you to:
+                    <li>Pass messages and spread ideas in unique ways</li>
+                    <li> Use domains in humouristic ways for fun Make your links stand out for their originality uniqueness and possibly cleverness</li>
+                </h3>
+
+                <h3 style="color: whitesmoke">...And if you don't care about the domains, at least you get convienent file hosting as all links are permanent and direct File uploading and URL shortening can be done though this website or ShareX Visit the home page to secure yourself an invite. (P.S. We aren't picky, it's really easy to get in)</h3>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="grid-container">
+        <!--
+        <div class="header">
+            <h1>Banner Ad</h1>
+        </div>
+-->
+        <div class="main">
+            <div class="title">
+                <h3>Human evolution</h3>
+            </div>
+
+            <hr id="titlehr">
+            <div>
+                <p id="name" style="float: left">By: Spek</p>
+                <p id="date" style="float: right">Date: 7/7/2018</p>
+            </div>
+
+            <div id="image">
+                <img src="https://cdn.discordapp.com/attachments/390272525726384130/465277014396633148/IMG_20180707_230430.jpg">
+            </div>
+        </div>
+        <!--
+        <div class="leftsb">
+            <h3>Side Ad</h3>
+        </div>
+
+        <div class="rightsb">
+            <h3>Side Ad</h3>
+        </div>
+-->
+        <div class="footer">
+            <h3>© 2018 Kibii - All rights reserved.</h3>
+        </div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
