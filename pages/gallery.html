@@ -11,37 +11,48 @@
     <meta name="twitter:description" content="An image viewer for floatr!">
     <meta name="twitter:image" content="https://deadspeck.github.io/kibbi_test_site.io/images/floatr.png">
     <meta name="twitter:card" content="summary_large_image">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="../css/gallery.css">
     <!-- Font Awe -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <!-- favicocococn-->
     <link rel="shortcut icon" href="../images/floatr.png">
-
-    <!-- Cloudflare -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script>
-    <!-- Google Api -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- BS js-->
-    <script src="../js/bootstrap.min.js"></script>
 </head>
 <style>
+    #user {
+        float: right;
+        border-left: solid 3px #404040;
+    }
 </style>
 
 <body>
 
-    <div class="topnav">
-        <a id="webpage"><span>float<font color="lawngreen">r</font></span></a>
-        <a href="https://floatr.co/" target="_blank">Home</a>
-        <a href="#" id="myBtn">About</a>
-        <a href="https://floatr.co/app/" target="_blank">Apps</a>
-        <a href="https://floatr.co/ui/" style="float:right" target="_blank"><i class="fas fa-sign-in-alt"></i> Login</a>
-        <a href="https://discordapp.com/invite/2keWYZs" style="float:right; border-left: solid 3px #404040;" target="_blank"><i class="fas fa-user" target="_blank"></i> Sign Up</a>
+    <div class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                <span>float<font color="lawngreen">r</font></span>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+            <a href="https://floatr.co/" target="_blank"><i class="fas fa-home"></i> Home</a>
+            <a href="#" id="myBtn"><i class="fas fa-book"></i> About</a>
+            <a href="https://floatr.co/app/" target="_blank"><i class="fas fa-camera"></i> Apps</a>
+            <a id="user" href="https://floatr.co/ui/" target="_blank"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a id="user" href="https://discordapp.com/invite/2keWYZs" target="_blank"><i class="fas fa-user" target="_blank"></i> Sign Up</a>
+        </div>
     </div>
+
     <!-- The Modal -->
     <div id="myModal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
@@ -49,13 +60,10 @@
                 <h2 style="text-align: center">About <span>float<font color="lawngreen">r</font></span></h2>
             </div>
             <div class="modal-body">
-                <h3 style="color: whitesmoke"><span>float<font color="lawngreen">r</font></span>
-                    is a unique type of file hosting and URL shortening service, allowing you to pick from over 140+ domains and many are added frequently!</h3>
+                <h3 style="color: whitesmoke"><span>float<font color="lawngreen">r</font></span> is a unique type of file hosting and URL shortening service, allowing you to pick from over 140+ domains and many are added frequently!</h3>
 
                 <h3 style="color: whitesmoke">This way, you can upload your files and get a customizable domain, this allows you to:
-                    <h4 style="padding-left: 30px">> Pass messages and spread ideas in unique ways<br>
-                    > Use domains in humouristic ways for fun<br>
-                    > Make your links stand out for their originality uniqueness and possibly cleverness</h4>
+                    <h4 style="padding-left: 30px">> Pass messages and spread ideas in unique ways<br> > Use domains in humouristic ways for fun<br> > Make your links stand out for their originality uniqueness and possibly cleverness</h4>
                 </h3>
 
                 <h3 style="color: whitesmoke">...And if you don't care about the domains, at least you get convienent file hosting as all links are permanent and direct File uploading and URL shortening can be done though this website or ShareX Visit the home page to secure yourself an invite. (P.S. We aren't picky, it's really easy to get in)</h3>
