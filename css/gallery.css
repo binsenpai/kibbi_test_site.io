@@ -179,7 +179,7 @@
         }
 }
     #user {
-        float: left;
+        float: none;
         border-left: solid 3px #404040;
     }
 
