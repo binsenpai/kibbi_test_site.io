@@ -178,10 +178,6 @@
             overflow-y: auto;
         }
 }
-    #user {
-        float: none;
-        border-left: solid 3px #404040;
-    }
 
     /* Modal (background) */
 
