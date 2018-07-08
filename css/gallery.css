@@ -168,7 +168,7 @@
         }
         .nav > .nav-links > a {
             display: block;
-            float: right;
+            float: left;
             width: 100%;
         }
         .nav > #nav-check:not(:checked) + .nav-links {
