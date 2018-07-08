@@ -81,11 +81,11 @@
 
     #image {
         text-align: center;
-        max-width:100%;
-        height:auto;
     }
 
     img {
+        max-width:100%;
+        height:auto;
         border: double 5px #404040;
         padding: 10px;
     }
