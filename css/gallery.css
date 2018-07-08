@@ -133,18 +133,18 @@
         display: none;
     }
 
-    @media (max-width:780px) {
+    @media (max-width:770px) {
         .nav > .nav-btn {
-            display: inline-block;
+            display: block;
             position: absolute;
             right: 0px;
             top: 0px;
         }
         .nav > .nav-btn > label {
             display: inline-block;
-            width: 50px;
-            height: 50px;
-            padding: 13px;
+            width: auto;
+            height: auto;
+            padding: 13px 20px 5px 20px;
         }
         .nav > .nav-btn > label:hover {
             background-color: rgba(0, 0, 0, 0.3);
@@ -167,7 +167,9 @@
             left: 0px;
         }
         .nav > .nav-links > a {
-            display: block;
+            float: right;
+            text-align: center;
+            display: inline-block;
             width: 100%;
         }
         .nav > #nav-check:not(:checked) + .nav-links {
@@ -177,7 +179,12 @@
             height: calc(100vh - 50px);
             overflow-y: auto;
         }
-}
+    }
+
+    #user {
+        float: right;
+        border-left: solid 3px #404040;
+    }
 
     /* Modal (background) */
 
