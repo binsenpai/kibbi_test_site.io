@@ -31,7 +31,7 @@
 
     .main {
         grid-area: main;
-        text-align: left;
+        text-align: center;
         font-size: 24px;
         padding: 20px;
         background-color: rgba(32, 32, 32, 0.8);
@@ -84,8 +84,10 @@
     }
 
     img {
+        max-width: 100%;
+        height: auto;
         border: double 5px #404040;
-        padding: 10px;
+        padding: auto;
     }
 
     /*Navbar*/
@@ -119,7 +121,7 @@
 
     .nav > .nav-links > a {
         display: inline-block;
-        padding: 13px 26px 13px 20px;
+        padding: 13px 26px 13px 26px;
         text-decoration: none;
         color: #efefef;
         border: solid 3px #404040;
@@ -133,7 +135,7 @@
         display: none;
     }
 
-    @media (max-width:770px) {
+    @media (max-width:800px) {
         .nav > .nav-btn {
             display: block;
             position: absolute;
@@ -171,6 +173,8 @@
             text-align: center;
             display: inline-block;
             width: 100%;
+            border-right: solid 0px;
+            border-bottom: solid 0px;
         }
         .nav > #nav-check:not(:checked) + .nav-links {
             height: 0px;
