@@ -79,6 +79,13 @@
         color: gray;
     }
 
+
+    @media (max-width:400px) {
+        #name, #date {
+            display: none;
+        }
+    }
+
     #image {
         text-align: center;
     }
@@ -125,6 +132,10 @@
         text-decoration: none;
         color: #efefef;
         border: solid 3px #404040;
+        -webkit-transition: all .2s ease-out;
+        -moz-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+        transition: all .2s ease-out;
     }
 
     .nav > .nav-links > a:hover {
@@ -187,7 +198,6 @@
 
     #user {
         float: right;
-        border-left: solid 3px #404040;
     }
 
     /* Modal (background) */
