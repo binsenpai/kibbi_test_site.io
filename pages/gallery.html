@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title onload="Scroll">floatr!</title>
     <meta charset="utf-8">
@@ -8,16 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="twitter:title" content="Image by">
-    <meta name="twitter:description" content="An image viewer for floatr!">
-    <meta name="twitter:image" content="https://deadspeck.github.io/kibbi_test_site.io/images/floatr.png">
+    <!-- <meta name="twitter:description" content="An image viewer for floatr!"> -->
+    <meta name="twitter:image" content="https://objects.floatr.me/[OBJECT_ID]">
     <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="stylesheet" href="../css/gallery.css"> <!-- On production this is called /assets/css/gallery.css -->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="shortcut icon" href="../images/floatr.png"> <!-- On production this is /assets/img/favicon.png -->
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/gallery.css">
-    <!-- Font Awe -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
-    <!-- favicocococn-->
-    <link rel="shortcut icon" href="../images/floatr.png">
+    <script src="/assets/js/gallery.js"></script> <!-- Move the script tag down below to an external file -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-7057170812736047",
+            enable_page_level_ads: true
+        });
+    </script>
 </head> 
 <body>
     <div class="nav">
@@ -36,16 +41,14 @@
         <input type="checkbox" id="nav-check">
         <div class="nav-links">
             <a href="https://floatr.co/" target="_blank"><i class="fas fa-home"></i> Home</a>
-            <a href="#" id="myBtn"><i class="fas fa-book"></i> About</a>
-            <a href="https://floatr.co/app/" target="_blank"><i class="fas fa-camera"></i> Apps</a>
+            <a href="#" id="my-btn"><i class="fas fa-book"></i> About</a>
+            <a href="https://getsharex.com" target="_blank"><i class="fas fa-camera"></i> App</a>
             <a id="user" href="https://floatr.co/ui/" target="_blank"><i class="fas fa-sign-in-alt"></i> Login</a>
             <a id="user" href="https://discordapp.com/invite/2keWYZs" target="_blank"><i class="fas fa-user" target="_blank"></i> Sign Up</a>
         </div>
     </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
+    <div id="my-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <span class="close">&times;</span>
@@ -62,7 +65,6 @@
             </div>
         </div>
     </div>
-    <br><br><br><br>
     <div class="grid-container">
         <!--
         <div class="header">
@@ -71,17 +73,17 @@
 -->
         <div class="main">
             <div class="title">
-                <h3>Human evolution</h3>
+                <h3>[FILE_NAME]</h3>
             </div>
 
             <hr id="titlehr">
             <div>
-                <p id="name" style="float: left">By: Spek</p>
-                <p id="date" style="float: right">Date: 7/7/2018</p>
+                <p id="name" style="float: left">Uploaded by [AUTHOR_NAME]</p>
+                <p id="date" style="float: right">[TIME_DATA] [TIME_FORMAT] ago.</p>
             </div>
 
             <div id="image">
-                <img src="https://floatr-prod.nyc3.digitaloceanspaces.com/GBSAUaEDfHsby5?">
+                <img src="https://objects.floatr.me/[OBJECT_ID]">
             </div>
         </div>
         <!--
@@ -98,26 +100,18 @@
         </div>
     </div>
     <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
+        let modal = document.getElementById('data-modal');
+        let btn = document.getElementById("modal-btn");
+        let span = document.getElementsByClassName('close')[0];
+        
         btn.onclick = function() {
             modal.style.display = "block";
         }
-
-        // When the user clicks on <span> (x), close the modal
+        
         span.onclick = function() {
             modal.style.display = "none";
         }
-
-        // When the user clicks anywhere outside of the modal, close it
+        
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
@@ -125,5 +119,4 @@
         }
     </script>
 </body>
-
 </html>
